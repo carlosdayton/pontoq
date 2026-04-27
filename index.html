@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ponto Q — Lanchonete & Sushi | Luziânia-GO</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">Ponto <span>Q</span></div>
+    <ul class="nav__links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#cardapio">Cardápio</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <div class="nav__btns">
+      <a href="https://wa.me/5561984264535" class="btn btn--nav" target="_blank">Fazer Pedido</a>
+      <a href="https://quitanda.alfalabs.com.br/filiais" class="btn btn--nav btn--nav-outline" target="_blank">Pedido pelo Site</a>
+    </div>
+    <button class="nav__toggle" aria-label="Menu" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg" id="heroBg"></div>
+    <div class="hero__overlay"></div>
+    <!-- linhas decorativas -->
+    <div class="hero__line hero__line--v1"></div>
+    <div class="hero__line hero__line--v2"></div>
+    <div class="hero__line hero__line--h"></div>
+    <div class="hero__content" id="heroContent">
+      <p class="hero__tag" id="heroTag">Lanchonete, Padaria & Sushi</p>
+      <h1 class="hero__title">
+        <span class="hero__title-line" id="heroLine1">Do café da manhã</span>
+        <em class="hero__title-line" id="heroLine2">ao sushi perfeito</em>
+      </h1>
+      <p class="hero__sub" id="heroSub">Salgados fresquinhos, tapiocas, sanduíches e o melhor sushi<br/>de Luziânia-GO — tudo em um só lugar.</p>
+      <div class="hero__actions" id="heroActions">
+        <a href="#cardapio" class="btn btn--primary">Ver Cardápio</a>
+        <a href="#contato" class="btn btn--ghost">Fale Conosco</a>
+      </div>
+    </div>
+    <div class="hero__scroll" id="heroScroll">
+      <span class="hero__scroll-label">scroll</span>
+      <span class="hero__scroll-line"></span>
+    </div>
+    <!-- número flutuante decorativo -->
+    <div class="hero__deco-num">Q</div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="container sobre__grid">
+      <div class="sobre__img-wrap" id="sobreImgs">
+        <div class="sobre__img sobre__img--1"></div>
+        <div class="sobre__img sobre__img--2"></div>
+        <div class="sobre__badge">
+          <span class="sobre__badge-num">+10</span>
+          <span class="sobre__badge-txt">anos de<br/>sabor</span>
+        </div>
+        <div class="sobre__glow"></div>
+      </div>
+      <div class="sobre__text" id="sobreText">
+        <p class="section-tag">Nossa História</p>
+        <h2 class="section-title">Um ponto de encontro<br/>para quem aprecia o bom</h2>
+        <p>O Ponto Q é a lanchonete que Luziânia adotou como sua. Aqui você encontra desde o café da manhã mais gostoso da cidade até combinados de sushi frescos preparados na hora.</p>
+        <p>Salgados artesanais, tapiocas, sanduíches, massas, bolos e muito mais — porque bom gosto não tem hora.</p>
+        <div class="sobre__stats">
+          <div class="stat" data-count="500">
+            <strong class="stat__num">0</strong><strong>+</strong>
+            <span>Clientes/mês</span>
+          </div>
+          <div class="stat" data-count="40">
+            <strong class="stat__num">0</strong><strong>+</strong>
+            <span>Pratos no cardápio</span>
+          </div>
+          <div class="stat">
+            <strong>4.8★</strong>
+            <span>Avaliação Google</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="diferenciais" id="diferenciais">
+    <div class="diferenciais__bg-text">PONTO Q</div>
+    <div class="container">
+      <div class="diferenciais__grid">
+        <div class="diferencial">
+          <div class="diferencial__icon">🍣</div>
+          <h3>Sushi Fresco</h3>
+          <p>Temakis, combinados e sashimis preparados na hora com ingredientes selecionados.</p>
+          <div class="diferencial__line"></div>
+        </div>
+        <div class="diferencial">
+          <div class="diferencial__icon">☕</div>
+          <h3>Café & Padaria</h3>
+          <p>Pães frescos, salgados artesanais, bolos e o melhor café da manhã da cidade.</p>
+          <div class="diferencial__line"></div>
+        </div>
+        <div class="diferencial">
+          <div class="diferencial__icon">🥞</div>
+          <h3>Tapiocas & Omeletes</h3>
+          <p>Opções quentinhas e variadas para qualquer hora do dia, feitas na hora.</p>
+          <div class="diferencial__line"></div>
+        </div>
+        <div class="diferencial">
+          <div class="diferencial__icon">🛵</div>
+          <h3>Delivery Rápido</h3>
+          <p>Peça pelo WhatsApp e receba tudo fresquinho no conforto da sua casa.</p>
+          <div class="diferencial__line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARDÁPIO -->
+  <section class="cardapio" id="cardapio">
+    <div class="container">
+      <p class="section-tag center" data-gsap="fade-up">O que servimos</p>
+      <h2 class="section-title center" data-gsap="fade-up">Nosso Cardápio</h2>
+      <div class="cardapio__tabs" data-gsap="fade-up">
+        <button class="tab active" onclick="switchTab(this,'sushi')">Sushi</button>
+        <button class="tab" onclick="switchTab(this,'lanches')">Lanches</button>
+        <button class="tab" onclick="switchTab(this,'tapiocas')">Tapiocas</button>
+        <button class="tab" onclick="switchTab(this,'bebidas')">Bebidas</button>
+      </div>
+
+      <div class="cardapio__panel active" id="sushi">
+        <div class="menu-grid">
+          <div class="menu-item"><div class="menu-item__info"><h4>Temaki de Salmão</h4><p>Arroz e salmão</p></div><span class="menu-item__price">R$ 38,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Temaki Philadélfia</h4><p>Arroz, salmão, cream cheese e cebolinha ou alho poró</p></div><span class="menu-item__price">R$ 38,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Temaki da Casa</h4><p>Arroz, salmão, cream cheese, gengibre, alho poró e pimenta japonesa</p></div><span class="menu-item__price">R$ 46,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Temaki Bombado <small>(sem arroz)</small></h4><p>Salmão, cream cheese e cebolinha</p></div><span class="menu-item__price">R$ 49,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Combinado 24 peças</h4><p>Sashimis, shakimakis, philadélfia, califórnia e joys</p></div><span class="menu-item__price">R$ 81,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Combinado 36 peças</h4><p>Sashimis, niguiris, philadélfia, uramakis, shakimakis e hot philadélfia</p></div><span class="menu-item__price">R$ 118,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Combinado 48 peças</h4><p>Sashimis, niguiris, uramakis, shakimakis, philadélfia e hot philadélfia</p></div><span class="menu-item__price">R$ 153,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Sashimi ao molho de maracujá <small>(10 pç)</small></h4><p>Salmão maçaricado ao molho de maracujá</p></div><span class="menu-item__price">R$ 47,90</span></div>
+        </div>
+      </div>
+
+      <div class="cardapio__panel" id="lanches">
+        <div class="menu-grid">
+          <div class="menu-item"><div class="menu-item__info"><h4>Cheese Tudo</h4><p>Hambúrguer, bacon, queijo, presunto, ovo e salada</p></div><span class="menu-item__price">R$ 24,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Cheese Bacon Salada</h4><p>Hambúrguer, bacon, queijo e salada</p></div><span class="menu-item__price">R$ 22,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Cachorro Quente na Chapa</h4><p>Salsicha, milho, queijo, batata palha e ervilha</p></div><span class="menu-item__price">R$ 15,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Panqueca Carne Seca e Muçarela</h4><p>Panqueca recheada com carne seca e muçarela</p></div><span class="menu-item__price">R$ 22,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Omelete Calabresa, Bacon e Muçarela</h4><p>Omelete recheado e bem temperado</p></div><span class="menu-item__price">R$ 21,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Pão Francês com Carne de Panela</h4><p>Novidade da casa</p></div><span class="menu-item__price">R$ 15,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Cuscuz Carne Seca com Muçarela</h4><p>Cuscuz quentinho com recheio especial</p></div><span class="menu-item__price">R$ 22,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Massa 8 Ingredientes</h4><p>Escolha a massa, acompanhamentos e molho</p></div><span class="menu-item__price">R$ 33,90</span></div>
+        </div>
+      </div>
+
+      <div class="cardapio__panel" id="tapiocas">
+        <div class="menu-grid">
+          <div class="menu-item"><div class="menu-item__info"><h4>Tapioca Manteiga</h4><p>Clássica e quentinha</p></div><span class="menu-item__price">R$ 12,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Tapioca Queijo Coalho</h4><p></p></div><span class="menu-item__price">R$ 20,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Tapioca Carne Seca e Muçarela</h4><p></p></div><span class="menu-item__price">R$ 21,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Tapioca Carne Seca e Requeijão</h4><p></p></div><span class="menu-item__price">R$ 21,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Tapioca Presunto e Queijo</h4><p></p></div><span class="menu-item__price">R$ 20,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Tapioca com Carne de Panela</h4><p>Novidade!</p></div><span class="menu-item__price">R$ 21,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Tapioca Banana, Muçarela, Açúcar e Canela</h4><p></p></div><span class="menu-item__price">R$ 20,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Tapioca Presunto, Queijo e Ovo</h4><p></p></div><span class="menu-item__price">R$ 21,90</span></div>
+        </div>
+      </div>
+
+      <div class="cardapio__panel" id="bebidas">
+        <div class="menu-grid">
+          <div class="menu-item"><div class="menu-item__info"><h4>Café Simples</h4><p>Incluso copo térmico</p></div><span class="menu-item__price">R$ 2,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Cappuccino da Casa</h4><p>Com canelinha</p></div><span class="menu-item__price">R$ 12,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Suco Natural de Laranja</h4><p>300ml / 500ml / 1L</p></div><span class="menu-item__price">a partir de R$ 7,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Suco de Polpa</h4><p>300ml ou 500ml — vários sabores</p></div><span class="menu-item__price">a partir de R$ 7,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Coca-Cola Lata 310ml</h4><p></p></div><span class="menu-item__price">R$ 5,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Chocolate Quente</h4><p>180ml</p></div><span class="menu-item__price">R$ 11,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Red Bull 250ml</h4><p></p></div><span class="menu-item__price">R$ 12,90</span></div>
+          <div class="menu-item"><div class="menu-item__info"><h4>Água Mineral</h4><p>Com ou sem gás — 500ml</p></div><span class="menu-item__price">a partir de R$ 3,00</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM -->
+  <section class="instagram" id="galeria">
+    <div class="container instagram__inner">
+      <p class="section-tag center" data-gsap="fade-up">Nosso Espaço</p>
+      <h2 class="section-title center" data-gsap="fade-up">Veja nossas fotos<br/>no Instagram</h2>
+      <p class="instagram__sub" data-gsap="fade-up">Acompanhe os pratos do dia, novidades e o ambiente do Ponto Q.</p>
+      <a href="https://instagram.com/quitandasjt" target="_blank" class="instagram__btn" data-gsap="fade-up">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        @quitandasjt
+      </a>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="depoimentos" id="depoimentos">
+    <div class="container">
+      <p class="section-tag center" data-gsap="fade-up">O que dizem</p>
+      <h2 class="section-title center" data-gsap="fade-up">Nossos Clientes</h2>
+      <div class="depoimentos__grid">
+        <div class="depoimento">
+          <div class="depoimento__quote">"</div>
+          <div class="depoimento__stars">★★★★★</div>
+          <p>"O sushi do Ponto Q é incrível! Temaki fresquinho, salmão de qualidade e preço justo. Melhor da cidade sem dúvida!"</p>
+          <div class="depoimento__autor"><div class="depoimento__avatar">M</div><div><strong>Marcos Oliveira</strong><span>Google Maps</span></div></div>
+        </div>
+        <div class="depoimento">
+          <div class="depoimento__quote">"</div>
+          <div class="depoimento__stars">★★★★★</div>
+          <p>"Tomo café da manhã aqui toda semana. Salgados fresquinhos, tapioca deliciosa e o café é maravilhoso. Atendimento nota 10!"</p>
+          <div class="depoimento__autor"><div class="depoimento__avatar">A</div><div><strong>Ana Paula Souza</strong><span>Google Maps</span></div></div>
+        </div>
+        <div class="depoimento">
+          <div class="depoimento__quote">"</div>
+          <div class="depoimento__stars">★★★★★</div>
+          <p>"Pedi o combinado de 36 peças e chegou rapidinho pelo delivery. Tudo fresquíssimo e bem montado. Virei cliente fiel!"</p>
+          <div class="depoimento__autor"><div class="depoimento__avatar">R</div><div><strong>Ricardo Mendes</strong><span>Google Maps</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="cta">
+    <div class="cta__parallax-bg" id="ctaBg"></div>
+    <div class="cta__overlay"></div>
+    <div class="container cta__content">
+      <h2 data-gsap="fade-up">Bora pedir agora?<br/><em>Ponto Q</em> te atende!</h2>
+      <p data-gsap="fade-up">Sushi, tapioca, lanche ou café — peça pelo WhatsApp e receba em casa</p>
+      <div class="cta__btns">
+        <a href="https://wa.me/5561984264535" class="btn btn--primary btn--lg" target="_blank" data-gsap="fade-up">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Reservar pelo WhatsApp
+        </a>
+        <a href="https://quitanda.alfalabs.com.br/filiais" class="btn btn--ghost btn--lg" target="_blank" data-gsap="fade-up">
+          🛒 Fazer Pedido pelo Site
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contato" id="contato">
+    <div class="container contato__grid">
+      <div class="contato__info" data-gsap="fade-right">
+        <p class="section-tag">Venha nos visitar</p>
+        <h2 class="section-title">Onde estamos</h2>
+        <div class="contato__item">
+          <span class="contato__icon">📍</span>
+          <div><strong>Endereço</strong><p>R. Americano do Brasil, 191 – Centro, Luziânia – GO, 72800-570</p></div>
+        </div>
+        <div class="contato__item">
+          <span class="contato__icon">📞</span>
+          <div><strong>Telefone / WhatsApp</strong><p>(47) 9966 · (61) 98426-4535</p></div>
+        </div>
+        <div class="contato__item">
+          <span class="contato__icon">🕐</span>
+          <div>
+            <strong>Horário de Funcionamento</strong>
+            <p>Segunda a Domingo: 11h às 22h</p>
+          </div>
+        </div>
+        <div class="contato__social">
+          <a href="https://instagram.com/quitandasjt" target="_blank" aria-label="Instagram">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="contato__mapa" data-gsap="fade-left">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3836.0!2d-47.953501!3d-16.2525112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9359998b241bcfe3%3A0xc2fb11aed49f0dcc!2sPonto%20Q!5e0!3m2!1spt-BR!2sbr!4v1"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Localização Ponto Q — R. Americano do Brasil, 191, Luziânia-GO">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__logo">Ponto <span>Q</span></div>
+      <p>© 2026 Ponto Q Lanchonete & Sushi — Luziânia, Goiás</p>
+    </div>
+  </footer>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="gsap-animations.js"></script>
+  <script>
+    window.addEventListener('scroll', () => {
+      document.getElementById('nav').classList.toggle('nav--scrolled', window.scrollY > 60);
+    });
+    function toggleMenu() {
+      document.querySelector('.nav__links').classList.toggle('open');
+    }
+    function switchTab(btn, id) {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.cardapio__panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
