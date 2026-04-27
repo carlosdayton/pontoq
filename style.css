@@ -207,13 +207,13 @@ body {
 }
 .sobre__img--1 {
   width: 75%; height: 75%; top: 0; left: 0;
-  background-image: url('img/foto2.jpeg');
+  background-image: url('https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800&q=90');
   background-position: center;
   box-shadow: 0 20px 60px rgba(0,0,0,.5);
 }
 .sobre__img--2 {
   width: 60%; height: 55%; bottom: 0; right: 0;
-  background-image: url('img/foto4.jpeg');
+  background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=90');
   border: 4px solid var(--dark);
   box-shadow: 0 20px 60px rgba(0,0,0,.5);
 }
